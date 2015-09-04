@@ -30,19 +30,6 @@ An example can be found [here](https://scs.demo.socrata.com/Government/NOLA-311-
 | Ticket Status                         | `ticket_status`                    | Plain Text  | Yes (Must be Open or Closed)     | Filtering, charting                 |
 | Image                                 | `image`                            | URL         | No       | User-facing context                 |
 | Location                              | `location`                         | Location    | Yes      | Mapping                             |
-
-## Optional Category Mapping
-
-Sometimes issue categories don't have citizen-friendly names.  If a publisher wishes to present a given issue category with a friendlier name, they can optionally populate a dataset, with the fields below, and the app will display alternative names within the user interface.  
-
-An example can be found [here](https://scs.demo.socrata.com/Government/NOLA-311-Category-Names/n4pj-tfiu).  
-
-| Attribute                       | API Field                | Type       | Required | Role within app                                                   |
-| ---                             | ---                      | ---        | ---      | ---                                                               |
-| Source Name                     | `source_name`            | Plain Text | No       | Identifies name within source dataset                             |
-| Category Display Name           | `display_name`           | Plain Text | No       | Alternative citizen-facing category name                          |
-| Secondary Category Display Name | `secondary_display_name` | Plain Text | No       | Alternative citizen-facing category name for secondary categories |
-
 ## Neighborhood / District Geospatial Data
 
 The Service Connect App requires a Shapefile that corresponds to the `neighborhood_district` field.
